@@ -42,6 +42,8 @@ Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
 Bundle "altercation/vim-colors-solarized"
 Bundle "pangloss/vim-javascript"
+Bundle "mustache/vim-mustache-handlebars"
+Bundle "digitaltoad/vim-jade"
 " Bundle "AutoClose"
 
 " tComment
@@ -54,5 +56,15 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" Correctly color .less files
+" Correctly color less files
 au BufNewFile,BufRead *.less set filetype=css
+
+" Correctly color Gemfiles
+au BufNewFile,BufRead Gemfile* set filetype=ruby
+
+" vim-mustache-handlebars plugin doesn't color .hbs files
+au BufNewFile,BufRead *.hbs set filetype=mustache
+let g:mustache_abbreviations = 1  " allow vim-mustache-handlebars commands
+
+" vim-jade doesn't automatically detect jade files, so set filetype manually
+au BufNewFile,BufRead *.jade set filetype=jade
