@@ -1,3 +1,9 @@
+# =========== CUSTOM FUNCTIONS ===============
+function mkcd() {
+  mkdir $1;
+  cd $1;
+}
+
 # =========== SHOW BRANCH ===============
 source "$CONFIG/bin/git-prompt.sh"
 
