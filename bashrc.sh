@@ -5,7 +5,7 @@ function mkcd() {
 }
 
 # =========== SHOW BRANCH ===============
-source "$CONFIG/bin/git-prompt.sh"
+source "$CONFIG_HOME/bin/git-prompt.sh"
 
 # =========== TERMINAL COLORS ==============
 NM="\[\033[0;38m\]" # means no background and white lines
