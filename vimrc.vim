@@ -8,6 +8,8 @@ set softtabstop=2
 set number
 set laststatus=2
 set statusline=%F
+set mouse=a    " enable mouse support
+syntax on
 
 let mapleader = "\\"
 
