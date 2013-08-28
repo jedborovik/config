@@ -9,7 +9,6 @@ set number
 set laststatus=2
 set statusline=%F
 set mouse=a    " enable mouse support
-syntax on
 
 let mapleader = "\\"
 
@@ -36,3 +35,8 @@ Bundle 'gmarik/vundle'
 Bundle "bufexplorer.zip"
 Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
+Bundle "altercation/vim-colors-solarized"
+
+syntax enable
+set background=dark
+colorscheme solarized
