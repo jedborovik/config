@@ -13,8 +13,11 @@ set mouse=a    " enable mouse support
 let mapleader = "\\"
 
 imap jj <Esc>
+imap kk <C-N>
 nnoremap ; :
 nnoremap : ;
+
+" Moving between buffers
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
