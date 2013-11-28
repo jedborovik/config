@@ -40,6 +40,12 @@ Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
 Bundle "altercation/vim-colors-solarized"
 
+" tComment
+Bundle "tComment"
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
+
+
 syntax enable
 set background=dark
 colorscheme solarized
