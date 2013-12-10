@@ -24,3 +24,5 @@ export PS1="$PS1$SI\w "                    # Brown path
 export PS1="$PS1$GN\$(__git_ps1 \"%s \")"  # Git
 export PS1="$PS1$NM] "                     # White close bracket
 export PS1="$PS1$IN"                       # Reset font color
+
+set -o vi
