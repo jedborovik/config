@@ -9,6 +9,7 @@ set number
 set laststatus=2
 set statusline=%F
 set mouse=a    " enable mouse support
+set backspace=indent,eol,start
 
 let mapleader = "\\"
 
