@@ -4,6 +4,31 @@ function mkcd() {
   cd $1;
 }
 
+# =========== ALIASES  ===============
+
+alias ll='ls -la'
+alias la='ls -a'
+alias lr='la -R'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .3='....'
+alias .....='cd ../../../..'
+alias .4='.....'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias mkdir='mkdir -p'
+
+alias path='echo -e ${PATH//:/\\n}'
+
+alias post='curl -X POST -d'
+alias postjson='curl -X POST -H "Content-Type: application/json" -d'
+alias get='curl'
+
 # =========== SHOW BRANCH ===============
 source "$CONFIG_HOME/bin/git-prompt.sh"
 
