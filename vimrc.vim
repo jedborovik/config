@@ -36,10 +36,13 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
+Bundle "mattn/emmet-vim"
 Bundle "bufexplorer.zip"
 Bundle "scrooloose/syntastic"
 Bundle "scrooloose/nerdtree"
 Bundle "altercation/vim-colors-solarized"
+Bundle "pangloss/vim-javascript"
+" Bundle "AutoClose"
 
 " tComment
 Bundle "tComment"
@@ -50,3 +53,6 @@ vnoremap // :TComment<CR>
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Correctly color .less files
+au BufNewFile,BufRead *.less set filetype=css
