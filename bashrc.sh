@@ -30,7 +30,7 @@ alias postjson='curl -X POST -H "Content-Type: application/json" -d'
 alias get='curl'
 
 # =========== SHOW BRANCH ===============
-source "$DOTFILES_HOME/bin/git-prompt.sh"
+source "$DOTFILES_ROOT/bin/git-prompt.sh"
 
 # =========== TERMINAL COLORS ==============
 NM="\[\033[0;38m\]" # means no background and white lines
