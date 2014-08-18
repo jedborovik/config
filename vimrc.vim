@@ -28,26 +28,28 @@ command! Eighty :silent!:execute ':highlight OverLength ctermbg=red ctermfg=whit
 
 " Vundle goodness
 filetype off                   " required!
-filetype plugin indent on     " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle "mattn/emmet-vim"
-Bundle "bufexplorer.zip"
-Bundle "scrooloose/syntastic"
-Bundle "scrooloose/nerdtree"
-Bundle "altercation/vim-colors-solarized"
-Bundle "pangloss/vim-javascript"
-Bundle "mustache/vim-mustache-handlebars"
-Bundle "digitaltoad/vim-jade"
-" Bundle "AutoClose"
+Plugin 'mattn/emmet-vim'
+Plugin 'bufexplorer.zip'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'tComment'
+" Plugin 'AutoClose'
 
-" tComment
-Bundle "tComment"
+" Add plugins before the following line
+call vundle#end()
+filetype plugin indent on
+
 nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
 
