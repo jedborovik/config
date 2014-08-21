@@ -17,6 +17,8 @@ imap jj <Esc>
 imap kk <C-N>
 nnoremap ; :
 nnoremap : ;
+nnoremap ,p o<ESC>p
+nnoremap ,P o<ESC>P
 
 " Moving between buffers
 map <C-J> <C-W>j
