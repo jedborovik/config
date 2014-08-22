@@ -18,7 +18,10 @@ imap kk <C-N>
 nnoremap ; :
 nnoremap : ;
 nnoremap ,p o<ESC>p
-nnoremap ,P o<ESC>P
+nnoremap ,P O<ESC>p
+
+" space bar folds (if fold present)
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 
 " Moving between buffers
 map <C-J> <C-W>j
@@ -72,3 +75,8 @@ let g:mustache_abbreviations = 1  " allow vim-mustache-handlebars commands
 
 " vim-jade doesn't automatically detect jade files, so set filetype manually
 au BufNewFile,BufRead *.jade set filetype=jade
+" Set indent folding for jade files
+au BufNewFile,BufRead *.jade set set foldmethod=indent
+
+" Open all folds by default
+au BufRead * normal zR
