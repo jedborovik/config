@@ -3,4 +3,5 @@
   br = branch
   st = status
   c  = commit
-	lg = log --oneline --decorate --all -10
+  lg = log --oneline --decorate --all -10
+  pu = push -u origin master
