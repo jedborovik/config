@@ -50,6 +50,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'tComment'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'elzr/vim-json'
 " Plugin 'AutoClose'
 
 " Add plugins before the following line
