@@ -51,6 +51,9 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'tComment'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
+Plugin 'fatih/vim-go'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 " Plugin 'AutoClose'
 
 " Add plugins before the following line
@@ -82,3 +85,18 @@ au BufNewFile,BufRead *.jade set set foldmethod=indent
 
 " Open all folds by default
 au BufRead * normal zR
+
+" vim-go settings and config
+au FileType go nmap <Leader>im <Plug>(go-implements)
+au FileType go nmap <Leader>in <Plug>(go-info)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>df <Plug>(go-def)
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>bu <Plug>(go-build)
+
+" ultisnippet config
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
