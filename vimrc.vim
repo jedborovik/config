@@ -96,6 +96,9 @@ au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>bu <Plug>(go-build)
 
+" run go import on save
+let g:go_fmt_command="goimports"
+
 " ultisnippet config
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
